@@ -1,0 +1,171 @@
+
+main {
+    max-width: 900px; /* Largura máxima do site */
+    margin: 0 auto;   /* Centraliza o bloco na tela */
+    padding: 20px;    /* Espaço interno para nOo encostar na borda */
+}
+body {
+    background-color: #1e272e; 
+    color: #d2dae2; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1,6;
+    font-size: 18px; 
+   
+}
+h1, h2, h3 {
+    color: #00d2ff;
+}
+table { /*organizar as tabelas*/ 
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 12px;
+    border: 1px solid #5555;
+}
+img {
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+} 
+section p {
+    text-align: center;
+    text-align: justify;
+}
+h1 { 
+  text-align: center;
+  margin-top: 24px ;
+  margin-bottom: 20px;  
+  font-size: 56px;
+  } 
+header h3 {
+    text-align: left;
+    max-width: 900px; 
+    margin: 0 auto;
+    padding-left: 20px; /**centralizar*/
+}
+table {
+    border-collapse: collapse;
+    background-color: #252d32; 
+    overflow: hidden; /* deixa redondo as bordas*/
+    margin-top: 20px;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #34495e; /* linha para nao enmendar */
+    color: #dfe6e9;
+}
+
+
+tr[style*="background-color"] td, 
+.titulo-tabela { 
+    background-color: #00d4ff;
+    color: #1e272e;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* passar o cursor encima e ver  */
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.05); /* um destaque bem suave */
+    transition: 0.2s;
+}
+
+/* adicionaa linha de baixo para nao fica juntu */
+tr:last-child td {
+    border-bottom: none;
+}
+.meu-botao {
+    display: inline-block;
+    padding: 12px 28px;       
+    background-color: #00d4ff; 
+    color: #1e272e;           
+    text-decoration: none;    
+    border-radius: 8px;        
+    font-weight: bold;        
+    font-size: 16px;
+    transition: all 0.3s ease; 
+    border: none;
+    cursor: pointer;
+}
+
+/* Efeito quando você passa o mouse por cima */
+.meu-botao:hover {
+    background-color: #ffffff; 
+    color: #00d4ff;         
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(85, 54, 158, 0.4); /* brilhu em baixo*/
+}
+
+/* Efeito quando você clica */
+.meu-botao:active {
+    transform: translateY(-1px); /* pra subi e descer um pouco ao ser clicado */
+}
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 50px;
+    border-top: 5px solid #333; /* linha final */
+    text-align: center;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+}
+.memorial {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #00d2ff; 
+}
+
+.creator {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.creator span {
+    color: #fff;
+    font-weight: 500;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .caixa {
+        font-size: 18px; 
+    }
+}
+/* celular */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .caixa {
+        margin: 5px;
+    }
+
+    img { 
+        max-width: 100%;
+        height: auto;
+        display: block; 
+        margin: 0 auto; 
+    }
+}
+@media (max-width: 1200px) {
+    .container{
+        flex-direction: column;
+    }
+    .caixa{
+        margin: 6px;
+    }
+
+}
+#fotos p {
+    text-align: center;
+}
